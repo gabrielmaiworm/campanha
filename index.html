@@ -11,7 +11,7 @@
             background-size: cover;
             background-position: center;
             position: relative;
-            height: 80vh; /* Aumentando a altura da faixa */
+            height: 80vh;
         }
         .parallax::before {
             content: "";
@@ -21,17 +21,23 @@
             left: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.5; /* Ajuste a opacidade conforme necessário */
-            z-index: 0; /* Coloca o banner por trás do texto */
+            opacity: 0.5;
+            z-index: 0;
         }
         .parallax-content {
             position: relative;
-            z-index: 1; /* Garante que o texto esteja à frente do banner */
+            z-index: 1;
             text-align: center;
         }
     </style>
 </head>
 <body class="bg-white text-gray-800">
+
+    <!-- Audio MP3 -->
+    <audio autoplay loop>
+        <source src="seu_audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
     <!-- QR Code Section -->
     <header class="bg-green-600 text-white py-4">
@@ -109,6 +115,31 @@
         </div>
     </section>
 
+    <!-- Apoio à Bebida -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto text-center px-4">
+            <h3 class="text-2xl font-bold text-green-500 mb-6">Apoio a Quem Ama um Goró</h3>
+            <video autoplay loop muted class="w-48 h-48 mx-auto rounded-full shadow-lg">
+                <source src="bebida.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <p class="mt-4 text-gray-700">"Se beber não dirija... Mas se for beber, me chama que eu vou também!"</p>
+            <p class="mt-2 text-gray-500 italic">"... Lula Cervejinha"</p>
+        </div>
+    </section>
+
+    <!-- Apoio ao Corte de Taxas -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto text-center px-4">
+            <h3 class="text-2xl font-bold text-green-500 mb-6">Apoio ao Corte de Taxas</h3>
+            <video autoplay loop muted class="w-48 h-48 mx-auto rounded-full shadow-lg">
+                <source src="facao.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <p class="mt-4 text-gray-700">Em nossa candidatura, as taxas das "Do Job" serão cortadas, levando o entretenimento a outro patamar!</p>
+        </div>
+    </section>
+
     <!-- Apoio LGBT -->
     <section class="py-8 bg-white">
         <div class="container mx-auto text-center px-4">
@@ -121,7 +152,4 @@
     <!-- Footer -->
     <footer class="bg-green-600 text-white py-4 text-center">
         <p>© 2024 Ministério dos Imbecís - Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+    </footer
